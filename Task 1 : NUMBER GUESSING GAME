@@ -1,0 +1,22 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+int main()
+{ int X,T;
+char i;
+cout<<"NUMBER GUESSING GAME"<<endl;
+cout<<"Guess the number between 1-10"<<endl<<endl;
+ cout<<"Do you want to play?(Y/N)"<<endl;
+    cin>>i;
+while(i=='y'|| i=='Y'){
+cout<<"Guess the Number : ";
+  cin>>X;
+  T=rand()%10+1;
+  if(T==X)
+  {cout<<"Hurry!! You have guessed the correct number"<<endl;}
+  else
+  {cout<<"Oop!! You have guessed wrong number"<<endl;}
+  cout<<"Do you want to continue?(Y/N)"<<endl;
+  cin>>i;}
+  return(0);
+}
