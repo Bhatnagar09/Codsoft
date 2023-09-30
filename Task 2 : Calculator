@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+ int main()
+ {   char t;
+     cout<<"CALCULATOR"<<endl<<endl;
+     cout<<"1 is for Addition"<<endl;
+     cout<<"2 is for Subtraction"<<endl;
+     cout<<"3 is for Multiplication"<<endl;
+     cout<<"4 is for Division"<<endl;
+     cout<<"5 is for Modulus"<<endl;
+    cout<<"Do you want to Calculate something ?(Y/N) : ";
+    cin>>t;
+    while(t=='Y'|| t=='y')
+    {
+    int x,y,n;
+    cout<<"\nEnter First the Number : ";
+    cin>>x;
+    cout<<"Enter Second the Number : ";
+    cin>>y;
+    cout<<"What you want to do? : ";
+    cin>>n;
+    int sum = x+y;
+    int sub=x-y;
+    int mult = x*y;
+    float Division = (float)x/y;
+    int mod = x%y;
+    switch(n)
+    {
+        case 1:
+          cout<<"Sum of Numbers : "<<sum<<endl;
+          break;
+        case 2:
+           cout<<"Sub of NUmbers : "<<sub<<endl;
+            break;
+        case 3:
+           cout<<"Mult of Numbers : "<<mult<<endl;
+            break;
+        case 4:
+           cout<<"Division of Numbers : "<<Division<<endl;
+            break;
+        case 5:
+           cout<<"Moldulus of Numbers : "<<mod<<endl;
+            break;
+        default:
+           cout<<"Oops! Invalid"<<endl;
+           break;
+        }
+        cout<<"Do you want to continue?(Y/N)";
+        cin>>t;
+    }
+    cout<<"Thank You!!";
+ }
